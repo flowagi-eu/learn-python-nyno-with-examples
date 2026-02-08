@@ -1,4 +1,4 @@
-### Run Any .nyno Files:
+### Run Any .nyno File in Python:
 ```
 from nynoclient import NynoClient
 client = NynoClient(
