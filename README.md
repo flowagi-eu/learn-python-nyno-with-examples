@@ -50,7 +50,7 @@ for i, value in enumerate(my_list):
    print(my_list[i]) # object
 ```
 
-### Loops & Interwine Multiple Workflows:
+### Loop & Interwine Multiple Workflows:
 ```
 from nynoclient import NynoClient
 client = NynoClient(
