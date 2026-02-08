@@ -1,4 +1,7 @@
-# Learn to use Powerful Nyno (AI) Workflows build using a GUI in Python!
+# Learn to use Powerful [Nyno (AI) Workflows build using a GUI](https://github.com/flowagi-eu/nyno) in Python!
+
+![Nyno examples connecting multiple AI nodes](/h/c0f8c2c19f52c63ba139a25e5fa5fbc80a36a865c1368534bac204c3fc3d683f/screenshot-from-2026-01-12-13-26-24.webp)
+
 
 ### Run Any .nyno File in Python:
 ```
