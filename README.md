@@ -16,6 +16,7 @@ with open('your-nyno-file.nyno','r') as r:
     content = r.read()
 
 result = client.run_nyno(content)
+print(result) # { "status": "OK", "execution": [...] }
 ```
 
 ### Run Any .nyno Files with Custom Context Variables:
@@ -31,6 +32,7 @@ with open('your-nyno-file.nyno','r') as r:
     content = r.read()
 
 result = client.run_nyno(content, {"PROMPT":"Do a SWOT analysis of ..."})
+print(result) # { "status": "OK", "execution": [...] }
 ```
 
 ### Use a Workflow as Loop
