@@ -28,7 +28,29 @@ with open('your-nyno-file.nyno','r') as r:
 result = client.run_nyno(content, {"PROMPT":"Do a SWOT analysis of ..."})
 ```
 
-### Loops Multiple Wokflows: Interwine Multiple .nyno Files:
+### Use a Workflow as Loop
+```
+from nynoclient import NynoClient
+client = NynoClient(
+    credentials="change_me",
+    host="127.0.0.1",
+    port=9024,
+)
+
+with open('your-nyno-file.nyno','r') as r:
+    content = r.read()
+
+# 1. Workflow one should set "prev" to a list
+result = client.run_nyno(content) # prev should be a list
+list_length = len(result.get('execution'))
+my_list = result.get('execution')[list_length-1].get('output').get('c').get('prev')
+
+# 2. Loop over the list with new workflow
+for i, value in enumerate(my_list):
+   print(my_list[i]) # object
+```
+
+### Loops & Interwine Multiple Workflows:
 ```
 from nynoclient import NynoClient
 client = NynoClient(
