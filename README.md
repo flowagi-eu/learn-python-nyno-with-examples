@@ -46,7 +46,7 @@ list_length = len(result.get('execution'))
 my_list = result.get('execution')[list_length-1].get('output').get('c').get('prev')
 
 # 2. Open the workflow for single items
-with open('your-nyno-file.nyno','r') as r:
+with open('your-single-item-workflow.nyno','r') as r:
     content_for_single_item = r.read()
 
 # 3. Loop over the list with new workflow
